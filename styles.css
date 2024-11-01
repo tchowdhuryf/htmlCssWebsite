@@ -1,4 +1,5 @@
 
+/* universal target to have the same font throughout the pages */
 * {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -11,26 +12,35 @@ header {
     text-align: center;
 }
 
+/* logo styles */
 .header-logo {
     text-align: center;
     padding: 5px 0 5px 0;
  }
  
- #logo {
+#logo {
      width: 120px;
      border-radius: 50%;
  }
 
+/* navbar txt style */
+.navbar-brand {
+    font-family: "Dancing Script", serif;
+}
+
+/* body background style */
 body {
     margin: 0;
     padding: 0;
     background: linear-gradient(145deg,#EF60EA, #54CAF9);
 }
 
+/* centered headers on the pages */
 h2 {
     text-align: center;
 }
 
+/* Image styles */
 .image-container {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -64,6 +74,7 @@ h2 {
     }
 }
 
+/* GIF styles */
 .banner {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -71,10 +82,17 @@ h2 {
     justify-content: center;
 }
 
+/* table styles */
 table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
+}
+
+th {
+    background: #2b3035;
+    color: white;
+    font-weight: bolder;
 }
 
 table, th, td {
@@ -86,6 +104,7 @@ th, td {
     text-align: left;
 }
 
+/* form styles */
 form {
     max-width: 400px;
     margin: 20px auto;
@@ -109,35 +128,26 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+.submit-button {
+    margin-top: 10px;
+}
+
+/* submit button color change */
 input[type="submit"]:hover {
     background-color: #3b0086;
 }
 
-/* CSS Animations */
+/* CSS Page Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
-/* body fade animation */
 main {
     animation: fadeIn 1s ease-in;
 }
 
+/* footer styles */
 footer {
     background: linear-gradient(145deg,#EF60EA, #54CAF9);
-}
-
-.submit-button {
-    margin-top: 10px;
-}
-
-.navbar-brand {
-    font-family: "Dancing Script", serif;
-}
-
-th {
-    background: #2b3035;
-    color: white;
-    font-weight: bolder;
 }

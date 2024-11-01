@@ -1,0 +1,143 @@
+
+* {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    background: linear-gradient(145deg,#EF60EA, #54CAF9);
+    text-align: center;
+}
+
+.header-logo {
+    text-align: center;
+    padding: 5px 0 5px 0;
+ }
+ 
+ #logo {
+     width: 120px;
+     border-radius: 50%;
+ }
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(145deg,#EF60EA, #54CAF9);
+}
+
+h2 {
+    text-align: center;
+}
+
+.image-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 15px; 
+}
+
+.image-container img {
+    max-width: calc(33.33% - 20px);
+    height: auto; 
+    border-radius: 8px;
+    transition: transform 0.3s; 
+}
+
+/* image animation */
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .image-container img {
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container img {
+        max-width: calc(100% - 20px);
+    }
+}
+
+.banner {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display:flex;
+    justify-content: center;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+input[type="submit"] {
+    background-color: #6200b3;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3b0086;
+}
+
+/* CSS Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* body fade animation */
+main {
+    animation: fadeIn 1s ease-in;
+}
+
+footer {
+    background: linear-gradient(145deg,#EF60EA, #54CAF9);
+}
+
+.submit-button {
+    margin-top: 10px;
+}
+
+.navbar-brand {
+    font-family: "Dancing Script", serif;
+}
+
+th {
+    background: #2b3035;
+    color: white;
+    font-weight: bolder;
+}
